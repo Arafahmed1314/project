@@ -1,0 +1,402 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+/* navber start here  */
+body{
+    margin: 0;
+}
+h1{
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+ width: 100%;
+}
+.navber{
+    background-color: #178690;
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.navber h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.menu a{
+    background-color: #12646b;
+    border-radius: 10px;
+    margin: 7px 5px;
+    padding: 10px;
+ 
+}
+.menu a:hover{
+    background-color: grey;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.navber{
+    overflow: auto;
+}
+.downlogo img{
+    width: 77px;
+}
+
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.main{
+    padding: 90px 10px;
+    text-align: center;
+    position: relative;
+}
+.uplogo img{
+    width: 77px;
+  position: absolute;
+  right: 51px;
+  top: 26px;
+  transition: transform 2s;
+}
+.uplogo img:hover{
+   transform: rotate(360deg);
+}
+.desc h1{
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+}
+.desc p{
+    text-align: center;
+    color: grey;
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+.downlogo img{
+    width: 77px;
+  position: absolute;
+  left: 54px;
+  bottom: 28px;
+  transition: transform 2s;
+}
+.downlogo img:hover{
+    transform: rotate(360deg);
+ }
+ /* navber end here  */
+
+ /* about me start here  */
+ h2{
+    text-align: center;
+    font-size: 1.2rem;
+ }
+ .aboutmeimg img{
+    width: 170px;
+    border-radius: 50%;
+    border: 5px solid white;
+   
+ }
+ .aboutme{
+    text-align: center;
+    padding: 1% 7%;
+    margin: 2px 0px;
+    background-color: #39a4ac;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+ }
+ .aboutme p{
+    text-align: center;
+ }
+ .aboutme a{
+   font-size: 1.2rem;
+ }
+ .dotted{
+    border: dotted 6px white;
+    margin: 20px auto;
+    border-bottom: none;
+    width: 60px;
+ }
+ .cv{
+background-color: #12646b;
+border: 3px solid rgb(16, 57, 206);
+font-weight: bold;
+font-size: 1.2rem;
+color: white;
+margin: 10px;
+text-align: center;
+border-radius: 10px;
+
+ }
+ .aboutme::after{
+    display: table;
+content: '';
+clear: both;
+ }
+
+ /* experience start */
+ .professional{
+    padding: 1% 0%;
+ }
+ .card{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    height: 680px;
+ }
+ .card:hover{
+    box-shadow: 0 4px 8px 5px black;
+    
+ }
+ .cardicon{
+    text-align: center;
+ }
+ .cardicon img{
+    margin: 10px;
+    width: 90px;
+ }
+ .round{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+ }
+ .cardtitle{
+    background-color: #616161;
+    color: white;
+    padding: 1px;
+    text-align: center;
+ }
+
+
+
+ .skillcontainer{
+    padding-right: 45px;
+ }
+ .skillcontainer li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px ;
+    margin-top: 2px;
+    position: relative;
+    text-transform: uppercase;
+ }
+ .skillcontainer li::before{
+    content: '';
+position: absolute;
+top: 23px;
+left: 0px;
+border-radius: 1000px;
+width: 100%;
+height: 100%;
+background-color: rgba(64, 64, 141, 0.5);
+}
+ .skillcontainer li::after{
+    content: '';
+position: absolute;
+top: 23px;
+left: 0px;
+border-radius: 1000px;
+width: 0;
+height: 100%;
+background-color: rgb(37, 37, 129);
+animation-duration: 3s;
+animation-delay: 1s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+
+}
+.skillcontainer li.html:after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+        background-color: blue;
+    }
+}
+.skillcontainer li.css:after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 85%;
+    }
+}
+.skillcontainer li.bootstrap:after{
+    animation-name: bootstrap;
+}
+@keyframes bootstrap{
+    to{
+        width: 80%;
+    }
+}
+.skillcontainer li.js:after{
+    animation-name: js;
+}
+@keyframes js{
+    to{
+        width: 90%;
+    }
+}
+.skillcontainer li.jquery:after{
+    animation-name: jquery;
+}
+@keyframes jquery{
+    to{
+        width: 75%;
+    }
+}
+.skillcontainer li.node:after{
+    animation-name: node;
+}
+@keyframes node{
+    to{
+        width: 70%;
+    }
+}
+.skillcontainer li.git:after{
+    animation-name: git;
+}
+@keyframes git{
+    to{
+        width: 65%;
+    }
+}
+.skillcontainer li.express:after{
+    animation-name: express;
+}
+@keyframes express{
+    to{
+        width: 60%;
+    }
+}
+.skillcontainer li.react:after{
+    animation-name: react;
+}
+@keyframes react{
+    to{
+        width: 55%;
+    }
+}
+.professional::after{
+    display: table;
+    clear: both;
+    content: '';
+ }
+
+
+
+ /* achievement start here */
+ .achievements{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: white;
+ }
+ .contact{
+    /* padding: 1px; */
+    text-align: center;
+ }
+ .contact input,textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    resize: none;
+   box-shadow:  5px -5px 5px 0px #bf5f5f, -5px -4px 5px 0px #bf5f5f;
+
+ }
+ .bb{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 100;
+
+ }
+ 
+ .social{
+    text-align: center;
+    margin-top: 40px;
+ }
+.mediabutton{
+    text-align: center;
+   
+}
+
+ .btn{
+    border: none;
+    border-radius: 25px;
+    width: 40px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 32px;
+    background-color: white;
+
+    
+ }
+ .btn:hover{
+    background-color: grey;
+ }
+
+ .achievements::after{
+    clear: both;
+display: table;
+content: '';
+ }
+
+ /* footer start  */
+ .footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+ }
+ .footer a{
+    font-size: 1rem;
+    margin: 10px 0px;
+display: block;
+
+ }
+ .footer a:hover{
+    background-color: grey;
+    box-shadow: 5px 5px 4px yellow;
+    
+ }
+ .footer::after{
+    content: '';
+    display: table;
+    clear: both;
+ }
+
+ /* ADD SOMETHING FUNNY  */
+
+
+
+
+
+
+
+
+
+
+ 
